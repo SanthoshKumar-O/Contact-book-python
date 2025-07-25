@@ -11,7 +11,7 @@ def load_contacts():
             contacts={}
 def save_contacts():
     with open("contacts.json","w") as file:
-        json.dump(contacts,file,intent=4)
+        json.dump(contacts,file,indent=4)
 def no_empty_input(prompt):
     while True:
         value=input(prompt).strip()
